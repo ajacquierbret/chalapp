@@ -1,0 +1,8 @@
+node_modules/
+coverage/
+dist/
+lib/
+storybook/
+graphql/
+shim.*
+scripts/**/index.*

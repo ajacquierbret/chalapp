@@ -1,0 +1,34 @@
+{
+  "parser": "@typescript-eslint/parser",
+  "extends": "satya164",
+  "settings": {
+    "react": {
+      "version": "18"
+    },
+    "import/resolver": {
+      "babel-module": {}
+    }
+  },
+  "env": {
+    "browser": true,
+    "commonjs": true,
+    "react-native/react-native": true
+  },
+  "rules": {
+    "prettier/prettier": [
+      "error",
+      {},
+      {
+        "usePrettierrc": true
+      }
+    ],
+    "react-hooks/exhaustive-deps": ["error"],
+    "react/no-array-index-key": ["warn"],
+    "import/no-cycle": ["off"],
+    "eslint-comments/no-unused-disable": ["warn"],
+    "babel/no-unused-expressions": [
+      "error",
+      { "allowShortCircuit": true, "allowTernary": true }
+    ]
+  }
+}
